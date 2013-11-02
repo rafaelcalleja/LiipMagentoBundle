@@ -23,7 +23,7 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('mage_file')->isRequired()->cannotBeEmpty()->end()
                 ->scalarNode('session_namespace')->defaultValue('frontend')->cannotBeEmpty()->end()
                 ->arrayNode('store_mappings')
-                    ->addDefaultsIfNotSet()
+//                    ->addDefaultsIfNotSet()
                     ->useAttributeAsKey('name')
                     ->defaultValue(array())
                     ->prototype('scalar')->end()
